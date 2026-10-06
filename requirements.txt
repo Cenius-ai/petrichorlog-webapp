@@ -1,0 +1,3 @@
+# PetrichorLog itself is standard-library only: no runtime dependency is needed.
+# The single pinned package below is the test runner used by `python3 -m pytest`.
+pytest==8.3.3

@@ -1,0 +1,16 @@
+# user data and demo scratch space
+petrichorlog.json
+petrichorlog.json.bak-*
+.petrichorlog-demo/
+*.bak-*
+
+# python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+
+# local environment
+.env

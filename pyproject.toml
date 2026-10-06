@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "petrichorlog"
+version = "1.0.0"
+description = "Local rain-event log with soil-moisture notes, a named 0-5 petrichor intensity scale and a monthly seasonal visualiser."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+keywords = ["rain", "petrichor", "geosmin", "soil moisture", "cli", "journal"]
+dependencies = []
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Atmospheric Science",
+]
+
+[project.scripts]
+petrichorlog = "petrichorlog:main"
+
+[tool.setuptools]
+py-modules = ["petrichorlog"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
